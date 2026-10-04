@@ -1,15 +1,18 @@
 """Read-only StudioNet smoke check using the current GenLayer CLI calldata format."""
 import json
+import os
+import shutil
 import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).parents[1]
 deployment = json.loads((ROOT / "deployment.json").read_text(encoding="utf-8"))
 address = deployment["contractAddress"]
+cli = shutil.which("genlayer.cmd" if os.name == "nt" else "genlayer") or "genlayer"
 
 
 def call(method: str, *args: str) -> str:
-    command = ["genlayer", "call", address, method]
+    command = [cli, "call", address, method]
     if args:
         command.extend(["--args", *args])
     return subprocess.check_output(command, text=True, encoding="utf-8")
