@@ -1,0 +1,15 @@
+{
+  "account": "abolkaram",
+  "network": "StudioNet",
+  "contractAddress": "0x4cb64a6e81BD7E6bddf5437ddF62B2fD1508ce83",
+  "deploymentTransaction": "0x0cde074ac166f267e4bc3174da72b71ad8c87d27f5beb62e23d6d96d8f9bb3a6",
+  "deploymentConsensus": "MAJORITY_AGREE",
+  "deploymentExecution": "SUCCESS",
+  "sourceSha256": "98d57dcd7d72699eae30d8d0bb040f7fd9cef71d9fa47e868e449305bb0bab46",
+  "repository": "https://github.com/abolkaram/failure-prism",
+  "publicSite": "https://failure-prism.pages.dev/",
+  "lifecycleTransactions": {
+    "openPrism": "0xfe0082c310afc56cc78abe7037b877a9595325c7d0c5f98e1e17684ca9d65c00"
+  },
+  "publicRecord": "PRISM-CLI"
+}

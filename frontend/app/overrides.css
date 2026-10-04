@@ -1,0 +1,5 @@
+@media (min-width: 981px) {
+  .sector {
+    transform: rotate(var(--angle)) translateY(-270px) rotate(calc(-1 * var(--angle)));
+  }
+}
